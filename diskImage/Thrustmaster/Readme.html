@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/2000/REC-xhtml1-20000126/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"> 
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<title>Thrustmaster Mac OS X Driver (Beta)</title>
+	
+	<style type="text/css">
+		p.center{text-align:center}
+		body{background-color:#FFFFFF}
+		image{border-style:none}
+		div.center{text-align:center}
+                h1.center{text-align:center}
+	</style>
+</head>
+<body>
+
+<h1 class="center">Thrustmaster Mac OS X Driver (Beta)</h1>
+<div class="center">
+    <img src=".images/aquahr.gif" width="500" height="19" alt="" /><br>
+    <a href="#download"><img src=".images/dlbutton.gif" width="128" height="28" alt="Download Now" /></a>
+</div>
+<p class="center">
+    <a href="#intro">Intro</a> | <a href="#req">Requirements</a> | <a href="#install">Installation</a> | <a href="#download">Download</a> | <a href="#license">License</a> | <a href="#notes"> Release Notes</a> | <a href="#issues">Known Issues</a> | <a href="#contact">Contact</a>
+</p>
+
+<h3><a name="intro">Introduction</a><h3>
+<p>
+    This is a kernel extension for Mac OS X for those old (but great) ADB Thrustmaster sticks. It should work with the FCS, WCS, and rudders. It does this by tricking Mac OS X into thinking that the TM equipment is a USB HID device.
+</p>
+
+<h3><a name="req">Requirements</a></h3>
+<ol>
+    <li><b>Mac OS X 10.2 or latter</b></li>
+    <li><b>An ADB Bus</b> - Either a real one or a USB to ADB adpater. I use and recomend the <a href="http://www.griffintechnology.com/products/imate/index.html">iMate</a> from <a href="http://www.griffintechnology.com/">Griffin Technology</a>.
+    <li><b>An old ADB Thrustmaster stick</b></li>
+</ol>
+
+<h3><a name="install">Installation</a></h3>
+<ol>
+    <li><a href="#download">Download</a> the Thrustmaster package</li>
+    <li>Double click the package to start the installation</li>
+    <li>Reboot</li>
+    <li>Configure the driver using the Thrustmaster Preference Panel</li>
+    <ul>
+        <li>Poll Thrustmaster will poll the values of the TM stick every 70 MS. This is needed for iMates, if you have a real ADB bus, then you can probably turn this off.</li>
+        <li>WCS Rocker acts as a Modifier will toggle the rocker between acting as a hat switch, and acting as a modifier for the buttons and FCS hat switch.</li>
+        <li>Select the buttons that you want the rocker to modifiy.</li>
+        <li>Make sure to Restart the Driver after any changes you make.</li> 
+    </ul>
+    <li>You may need to reinit the ADB bus with the ADB Parser program that Griffin made for the iMate. It is part of the Mac OS X SDK.</li>
+    <li><b>On machines with a real ADB bus you must disable the AppleADBButtons extension by moving it out of the /System/Library/Extension folder.</b></li>
+</ol>
+<p>Apple has a bug with its AppleADBButtons driver (the driver controls the volume, brightness, and eject on iBooks and Powerbooks) where it doesn't check to see if it is getting matched up to the correct device and wil claim ownership of the TM sticks. In order to have the TM driver load properly on boot you will have to disable this extension by moving it out of the /System/Library/Extensions folder. If you are on a laptop, you might not want to do that and just reinit the ADB bus when needed.
+</p>
+
+<h3><a name="download">Download</a></h3>
+<ul>
+    <li><a href="http://prdownloads.sourceforge.net/tmmacosx/tm-0.3.dmg?download">Thrustmaster Driver</a></li>
+    <li><a href="http://prdownloads.sourceforge.net/tmmacosx/tm-0.3-source.tar.gz?download">Source</a></li>
+    <li><a href="http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/tmmacosx/">Web CVS</a></li>
+</ul>
+
+<h3><a name="license">License</a></h3>
+<p>
+    This project is released under the BSD License. Click <a href="License.txt">here</a> to view the license.
+</p>
+
+<h3><a name="notes">Release Notes</a></h3>
+<p><b>January 22, 2005</b></p>
+<ul>
+    <li>Added an option to emulate a twisting rudder. Some games (GraphSim's Operation Iraq Freedom) are poorly implemented and only search for the Rz axis ignoring the Z axis that a real rudder system would use.</li>
+    <li>Modified the hat switch to report values like the Saitek. GraphSim's OIF again has a poor implementation and only seems to work with Saitek like Joysticks.</li>
+</ul>
+<p><b>September 28, 2003</b></p>
+<ul>
+    <li>You can now select what buttons the WCS rocker modifies.</li>
+</ul>
+<p><b>August 24, 2003</b></p>
+<ul>
+    <li>Fixed Rudders, was reporting their range as 0-84, rather then 0-255</li>
+    <li>Added a Preference Panel to configure the driver settings</li>
+    <li>Moved to sourceforge.net</li>
+</ul>
+
+<p><b>April 5, 2003</b></p>
+<ul>
+    <li>Added a switch to the info.plist file to allow the rocker to work as a modifier.</li>
+    <li>We now add 128 to the reported rudder value.</li>
+    <li>When the rocker is not in modifier mode, it should report 0, and 180 degrees, rather then 0 and 45 degrees.</li>
+</ul>
+
+<p><b>March 29, 2003</b></p>
+<ul>
+    <li>Fixed Hat Switches.... I Hope...</li>
+    <li>Fixed Installer</li>
+</ul>
+
+<p><b>November 23, 2002</b></p>
+<ul>
+    <li>Fixed Hat Switches (I think)</li>
+    <li>Inverted the Throttle</li>
+    <li>Changed my polling to use a thread an IOSleep(), rather then a timer with a funky delayed call</li>
+</ul>
+
+<h3><a name="issues">Known Issues</a></h3>
+<ul>
+    <li>I am polling the TM stick, which is bad</li>
+</ul>
+
+<h3><a name="contact">Contact</a></h3>
+<p>
+    Please email any suggestions, bug reports, complaints, etc... to <a href="mailto:michael@milvich.com">michael@milvich.com</a>.
+</p>
+
+</body>
+</html>

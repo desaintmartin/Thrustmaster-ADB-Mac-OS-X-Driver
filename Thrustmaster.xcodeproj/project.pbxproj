@@ -1,0 +1,776 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EED42BD00A9915110050CCDA /* Thrustmaster.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A224C3EFF42367911CA2CB7 /* Thrustmaster.h */; };
+		EED42BD10A9915110050CCDA /* Constants.h in Headers */ = {isa = PBXBuildFile; fileRef = F530B2250377856E01000042 /* Constants.h */; };
+		EED42BD30A9915110050CCDA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		EED42BD50A9915110050CCDA /* Thrustmaster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A224C3FFF42367911CA2CB7 /* Thrustmaster.cpp */; settings = {ATTRIBUTES = (); }; };
+		EED5F3560517C7430063FCE7 /* ThrustmasterPref_Prefix.h in Headers */ = {isa = PBXBuildFile; fileRef = EEBA21610492E8AF0000003C /* ThrustmasterPref_Prefix.h */; };
+		EED5F3570517C7430063FCE7 /* ThrustmasterPref.h in Headers */ = {isa = PBXBuildFile; fileRef = EEBA21620492E8AF0000003C /* ThrustmasterPref.h */; };
+		EED5F3590517C7430063FCE7 /* ThrustmasterPref.nib in Resources */ = {isa = PBXBuildFile; fileRef = EEBA21700492E8C80000003C /* ThrustmasterPref.nib */; };
+		EED5F35A0517C7430063FCE7 /* joystick.tif in Resources */ = {isa = PBXBuildFile; fileRef = EE97764504F9676300A80202 /* joystick.tif */; };
+		EED5F35B0517C7430063FCE7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		EED5F35D0517C7430063FCE7 /* ThrustmasterPref.m in Sources */ = {isa = PBXBuildFile; fileRef = EEBA21630492E8AF0000003C /* ThrustmasterPref.m */; };
+		EED5F35F0517C7430063FCE7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBA21730492E99A0000003C /* Cocoa.framework */; };
+		EED5F3600517C7430063FCE7 /* PreferencePanes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBA21750492E9A90000003C /* PreferencePanes.framework */; };
+		EED5F3610517C7430063FCE7 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEF4415804BA70F10000003C /* Security.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		EED42BE00A9915110050CCDA /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.gcc.3_1;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+		EED42BE10A9915110050CCDA /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.gcc.3_1;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+		EED42BE20A9915110050CCDA /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.gcc.3_1;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+		EED42BE30A9915110050CCDA /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.gcc.3_1;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+		EED42BE40A9915110050CCDA /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.gcc.3_1;
+			fileType = sourcecode.c;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EED5F3540517C7430063FCE7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1A224C3EFF42367911CA2CB7 /* Thrustmaster.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Thrustmaster.h; sourceTree = "<group>"; };
+		1A224C3FFF42367911CA2CB7 /* Thrustmaster.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Thrustmaster.cpp; sourceTree = "<group>"; };
+		EE97761704F9587C00A80202 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		EE97764504F9676300A80202 /* joystick.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = joystick.tif; sourceTree = "<group>"; };
+		EEB25FAD0ACA4AD0003EDF94 /* postflight */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = postflight; path = installScripts/postflight; sourceTree = "<group>"; };
+		EEBA21610492E8AF0000003C /* ThrustmasterPref_Prefix.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ThrustmasterPref_Prefix.h; sourceTree = "<group>"; };
+		EEBA21620492E8AF0000003C /* ThrustmasterPref.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ThrustmasterPref.h; sourceTree = "<group>"; };
+		EEBA21630492E8AF0000003C /* ThrustmasterPref.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ThrustmasterPref.m; sourceTree = "<group>"; };
+		EEBA21710492E8C80000003C /* ThrustmasterPref.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = ThrustmasterPref.nib; path = English.lproj/ThrustmasterPref.nib; sourceTree = "<group>"; };
+		EEBA21730492E99A0000003C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		EEBA21750492E9A90000003C /* PreferencePanes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PreferencePanes.framework; path = /System/Library/Frameworks/PreferencePanes.framework; sourceTree = "<absolute>"; };
+		EED42BDF0A9915110050CCDA /* Info-Thrustmaster__Upgraded_.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Thrustmaster__Upgraded_.plist"; sourceTree = "<group>"; };
+		EED42BE50A9915110050CCDA /* Thrustmaster.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Thrustmaster.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		EED5F3640517C7430063FCE7 /* Info-ThrustmasterPrefPane__Upgraded_.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Info-ThrustmasterPrefPane__Upgraded_.plist"; sourceTree = "<group>"; };
+		EED5F3650517C7430063FCE7 /* Thrustmaster.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Thrustmaster.prefPane; sourceTree = BUILT_PRODUCTS_DIR; };
+		EED9692104C098D60000003C /* aquahr.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = aquahr.gif; sourceTree = "<group>"; };
+		EED9692204C098D60000003C /* dlbutton.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = dlbutton.gif; sourceTree = "<group>"; };
+		EED9692404C098D60000003C /* infoEdit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = infoEdit.jpg; sourceTree = "<group>"; };
+		EED9692504C098D60000003C /* pbproj.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = pbproj.gif; sourceTree = "<group>"; };
+		EED9692604C098D60000003C /* pkg.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = pkg.gif; sourceTree = "<group>"; };
+		EED9692704C098D60000003C /* smiley.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = smiley.gif; sourceTree = "<group>"; };
+		EEF4415804BA70F10000003C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = /System/Library/Frameworks/Security.framework; sourceTree = "<absolute>"; };
+		F50DDB460436514901000141 /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = /System/Library/Frameworks/Kernel.framework; sourceTree = "<absolute>"; };
+		F530B2250377856E01000042 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EED42BD60A9915110050CCDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED5F35E0517C7430063FCE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED5F35F0517C7430063FCE7 /* Cocoa.framework in Frameworks */,
+				EED5F3600517C7430063FCE7 /* PreferencePanes.framework in Frameworks */,
+				EED5F3610517C7430063FCE7 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* Thrustmaster */ = {
+			isa = PBXGroup;
+			children = (
+				EEB25FAC0ACA4A95003EDF94 /* Installer Scripts */,
+				EEE544440492913C0000003C /* Pref Pane */,
+				247142CAFF3F8F9811CA285C /* Source */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				F50DD8A5043650E901000141 /* Frameworks */,
+				19C28FB6FE9D52B211CA2CBB /* Products */,
+				EED9692004C098D60000003C /* webpage */,
+				EED5F3640517C7430063FCE7 /* Info-ThrustmasterPrefPane__Upgraded_.plist */,
+				EED42BDF0A9915110050CCDA /* Info-Thrustmaster__Upgraded_.plist */,
+			);
+			name = Thrustmaster;
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		19C28FB6FE9D52B211CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EED5F3650517C7430063FCE7 /* Thrustmaster.prefPane */,
+				EED42BE50A9915110050CCDA /* Thrustmaster.kext */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		247142CAFF3F8F9811CA285C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1A224C3EFF42367911CA2CB7 /* Thrustmaster.h */,
+				1A224C3FFF42367911CA2CB7 /* Thrustmaster.cpp */,
+				F530B2250377856E01000042 /* Constants.h */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		EEB25FAC0ACA4A95003EDF94 /* Installer Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				EEB25FAD0ACA4AD0003EDF94 /* postflight */,
+			);
+			name = "Installer Scripts";
+			sourceTree = "<group>";
+		};
+		EED9692004C098D60000003C /* webpage */ = {
+			isa = PBXGroup;
+			children = (
+				EED9692104C098D60000003C /* aquahr.gif */,
+				EED9692204C098D60000003C /* dlbutton.gif */,
+				EED9692404C098D60000003C /* infoEdit.jpg */,
+				EED9692504C098D60000003C /* pbproj.gif */,
+				EED9692604C098D60000003C /* pkg.gif */,
+				EED9692704C098D60000003C /* smiley.gif */,
+				EE97761704F9587C00A80202 /* index.html */,
+			);
+			path = webpage;
+			sourceTree = "<group>";
+		};
+		EEE544440492913C0000003C /* Pref Pane */ = {
+			isa = PBXGroup;
+			children = (
+				EEBA21700492E8C80000003C /* ThrustmasterPref.nib */,
+				EEBA21610492E8AF0000003C /* ThrustmasterPref_Prefix.h */,
+				EEBA21620492E8AF0000003C /* ThrustmasterPref.h */,
+				EEBA21630492E8AF0000003C /* ThrustmasterPref.m */,
+				EE97764504F9676300A80202 /* joystick.tif */,
+			);
+			name = "Pref Pane";
+			sourceTree = "<group>";
+		};
+		F50DD8A5043650E901000141 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EEF4415804BA70F10000003C /* Security.framework */,
+				F50DDB460436514901000141 /* Kernel.framework */,
+				EEBA21730492E99A0000003C /* Cocoa.framework */,
+				EEBA21750492E9A90000003C /* PreferencePanes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EED42BCF0A9915110050CCDA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED42BD00A9915110050CCDA /* Thrustmaster.h in Headers */,
+				EED42BD10A9915110050CCDA /* Constants.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED5F3550517C7430063FCE7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED5F3560517C7430063FCE7 /* ThrustmasterPref_Prefix.h in Headers */,
+				EED5F3570517C7430063FCE7 /* ThrustmasterPref.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		EED42BCD0A9915110050CCDA /* Thrustmaster (Upgraded) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EED42BD90A9915110050CCDA /* Build configuration list for PBXNativeTarget "Thrustmaster (Upgraded)" */;
+			buildPhases = (
+				EED42BCE0A9915110050CCDA /* ShellScript */,
+				EED42BCF0A9915110050CCDA /* Headers */,
+				EED42BD20A9915110050CCDA /* Resources */,
+				EED42BD40A9915110050CCDA /* Sources */,
+				EED42BD60A9915110050CCDA /* Frameworks */,
+				EED42BD70A9915110050CCDA /* Rez */,
+				EED42BD80A9915110050CCDA /* ShellScript */,
+			);
+			buildRules = (
+				EED42BE00A9915110050CCDA /* PBXBuildRule */,
+				EED42BE10A9915110050CCDA /* PBXBuildRule */,
+				EED42BE20A9915110050CCDA /* PBXBuildRule */,
+				EED42BE30A9915110050CCDA /* PBXBuildRule */,
+				EED42BE40A9915110050CCDA /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = "Thrustmaster (Upgraded)";
+			productInstallPath = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+			productName = Thrustmaster;
+			productReference = EED42BE50A9915110050CCDA /* Thrustmaster.kext */;
+			productType = "com.apple.product-type.kernel-extension.iokit";
+		};
+		EED5F3530517C7430063FCE7 /* ThrustmasterPrefPane (Upgraded) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EED42BC00A9914F10050CCDA /* Build configuration list for PBXNativeTarget "ThrustmasterPrefPane (Upgraded)" */;
+			buildPhases = (
+				EED5F3540517C7430063FCE7 /* CopyFiles */,
+				EED5F3550517C7430063FCE7 /* Headers */,
+				EED5F3580517C7430063FCE7 /* Resources */,
+				EED5F35C0517C7430063FCE7 /* Sources */,
+				EED5F35E0517C7430063FCE7 /* Frameworks */,
+				EED5F3620517C7430063FCE7 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ThrustmasterPrefPane (Upgraded)";
+			productInstallPath = "";
+			productName = ThrustmasterPrefPane;
+			productReference = EED5F3650517C7430063FCE7 /* Thrustmaster.prefPane */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0410;
+			};
+			buildConfigurationList = EED42BC60A9914F10050CCDA /* Build configuration list for PBXProject "Thrustmaster" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* Thrustmaster */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EED42BCD0A9915110050CCDA /* Thrustmaster (Upgraded) */,
+				EED5F3530517C7430063FCE7 /* ThrustmasterPrefPane (Upgraded) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EED42BD20A9915110050CCDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED42BD30A9915110050CCDA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED5F3580517C7430063FCE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED5F3590517C7430063FCE7 /* ThrustmasterPref.nib in Resources */,
+				EED5F35A0517C7430063FCE7 /* joystick.tif in Resources */,
+				EED5F35B0517C7430063FCE7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		EED42BD70A9915110050CCDA /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED5F3620517C7430063FCE7 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EED42BCE0A9915110050CCDA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "script=\"${SYSTEM_DEVELOPER_DIR}/ProjectBuilder Extras/Kernel Extension Support/KEXTPreprocess\";\nif [ -x \"$script\" ]; then\n    . \"$script\"\nfi";
+		};
+		EED42BD80A9915110050CCDA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "script=\"${SYSTEM_DEVELOPER_DIR}/ProjectBuilder Extras/Kernel Extension Support/KEXTPostprocess\";\nif [ -x \"$script\" ]; then\n    . \"$script\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EED42BD40A9915110050CCDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED42BD50A9915110050CCDA /* Thrustmaster.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED5F35C0517C7430063FCE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED5F35D0517C7430063FCE7 /* ThrustmasterPref.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EEBA21700492E8C80000003C /* ThrustmasterPref.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEBA21710492E8C80000003C /* ThrustmasterPref.nib */,
+			);
+			name = ThrustmasterPref.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EED42BC10A9914F10050CCDA /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ThrustmasterPref_Prefix.h;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				INFOPLIST_FILE = "Info-ThrustmasterPrefPane__Upgraded_.plist";
+				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-bundle",
+					"-twolevel_namespace",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Thrustmaster;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost";
+				WRAPPER_EXTENSION = prefPane;
+				ZERO_LINK = NO;
+			};
+			name = Development;
+		};
+		EED42BC20A9914F10050CCDA /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ThrustmasterPref_Prefix.h;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				INFOPLIST_FILE = "Info-ThrustmasterPrefPane__Upgraded_.plist";
+				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-bundle",
+					"-twolevel_namespace",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Thrustmaster;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost";
+				WRAPPER_EXTENSION = prefPane;
+				ZERO_LINK = YES;
+			};
+			name = Deployment;
+		};
+		EED42BC30A9914F10050CCDA /* BuildStyle */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ThrustmasterPref_Prefix.h;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				INFOPLIST_FILE = "Info-ThrustmasterPrefPane__Upgraded_.plist";
+				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-bundle",
+					"-twolevel_namespace",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Thrustmaster;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost";
+				WRAPPER_EXTENSION = prefPane;
+			};
+			name = BuildStyle;
+		};
+		EED42BC40A9914F10050CCDA /* BuildStyle-1 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ThrustmasterPref_Prefix.h;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				INFOPLIST_FILE = "Info-ThrustmasterPrefPane__Upgraded_.plist";
+				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-bundle",
+					"-twolevel_namespace",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Thrustmaster;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost";
+				WRAPPER_EXTENSION = prefPane;
+			};
+			name = "BuildStyle-1";
+		};
+		EED42BC50A9914F10050CCDA /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ThrustmasterPref_Prefix.h;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				INFOPLIST_FILE = "Info-ThrustmasterPrefPane__Upgraded_.plist";
+				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-bundle",
+					"-twolevel_namespace",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Thrustmaster;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost";
+				WRAPPER_EXTENSION = prefPane;
+			};
+			name = Default;
+		};
+		EED42BC70A9914F10050CCDA /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				MACOSX_DEPLOYMENT_TARGET = "";
+			};
+			name = Development;
+		};
+		EED42BC80A9914F10050CCDA /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				MACOSX_DEPLOYMENT_TARGET = "";
+			};
+			name = Deployment;
+		};
+		EED42BC90A9914F10050CCDA /* BuildStyle */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				MACOSX_DEPLOYMENT_TARGET = "";
+			};
+			name = BuildStyle;
+		};
+		EED42BCA0A9914F10050CCDA /* BuildStyle-1 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				MACOSX_DEPLOYMENT_TARGET = "";
+			};
+			name = "BuildStyle-1";
+		};
+		EED42BCB0A9914F10050CCDA /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				MACOSX_DEPLOYMENT_TARGET = "";
+			};
+			name = Default;
+		};
+		EED42BDA0A9915110050CCDA /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-Thrustmaster__Upgraded_.plist";
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				KERNEL_MODULE = YES;
+				LIBRARY_SEARCH_PATHS = "";
+				MODULE_IOKIT = YES;
+				MODULE_NAME = com.milvich.driver.Thrustmaster;
+				MODULE_VERSION = 1.0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Thrustmaster;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = kext;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		EED42BDB0A9915110050CCDA /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-Thrustmaster__Upgraded_.plist";
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				KERNEL_MODULE = YES;
+				LIBRARY_SEARCH_PATHS = "";
+				MODULE_IOKIT = YES;
+				MODULE_NAME = com.milvich.driver.Thrustmaster;
+				MODULE_VERSION = 1.0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Thrustmaster;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = kext;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		EED42BDC0A9915110050CCDA /* BuildStyle */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-Thrustmaster__Upgraded_.plist";
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				KERNEL_MODULE = YES;
+				LIBRARY_SEARCH_PATHS = "";
+				MODULE_IOKIT = YES;
+				MODULE_NAME = com.milvich.driver.Thrustmaster;
+				MODULE_VERSION = 1.0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Thrustmaster;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = kext;
+			};
+			name = BuildStyle;
+		};
+		EED42BDD0A9915110050CCDA /* BuildStyle-1 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-Thrustmaster__Upgraded_.plist";
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				KERNEL_MODULE = YES;
+				LIBRARY_SEARCH_PATHS = "";
+				MODULE_IOKIT = YES;
+				MODULE_NAME = com.milvich.driver.Thrustmaster;
+				MODULE_VERSION = 1.0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Thrustmaster;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = kext;
+			};
+			name = "BuildStyle-1";
+		};
+		EED42BDE0A9915110050CCDA /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Info-Thrustmaster__Upgraded_.plist";
+				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				KERNEL_MODULE = YES;
+				LIBRARY_SEARCH_PATHS = "";
+				MODULE_IOKIT = YES;
+				MODULE_NAME = com.milvich.driver.Thrustmaster;
+				MODULE_VERSION = 1.0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Thrustmaster;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EED42BC00A9914F10050CCDA /* Build configuration list for PBXNativeTarget "ThrustmasterPrefPane (Upgraded)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED42BC10A9914F10050CCDA /* Development */,
+				EED42BC20A9914F10050CCDA /* Deployment */,
+				EED42BC30A9914F10050CCDA /* BuildStyle */,
+				EED42BC40A9914F10050CCDA /* BuildStyle-1 */,
+				EED42BC50A9914F10050CCDA /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		EED42BC60A9914F10050CCDA /* Build configuration list for PBXProject "Thrustmaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED42BC70A9914F10050CCDA /* Development */,
+				EED42BC80A9914F10050CCDA /* Deployment */,
+				EED42BC90A9914F10050CCDA /* BuildStyle */,
+				EED42BCA0A9914F10050CCDA /* BuildStyle-1 */,
+				EED42BCB0A9914F10050CCDA /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		EED42BD90A9915110050CCDA /* Build configuration list for PBXNativeTarget "Thrustmaster (Upgraded)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED42BDA0A9915110050CCDA /* Development */,
+				EED42BDB0A9915110050CCDA /* Deployment */,
+				EED42BDC0A9915110050CCDA /* BuildStyle */,
+				EED42BDD0A9915110050CCDA /* BuildStyle-1 */,
+				EED42BDE0A9915110050CCDA /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

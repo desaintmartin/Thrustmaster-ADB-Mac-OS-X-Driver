@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/2000/REC-xhtml1-20000126/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"> 
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<title>Thrustmaster Mac OS X Driver (Beta)</title>
+	
+	<style type="text/css">
+		p.center{text-align:center}
+		body{background-color:#FFFFFF}
+		image{border-style:none}
+		div.center{text-align:center}
+                h1.center{text-align:center}
+	</style>
+</head>
+<body>
+
+<h1 class="center">Thrustmaster Mac OS X Driver (Beta v4)</h1>
+<div class="center">
+    <img src="aquahr.gif" width="500" height="19" alt="" /><br>
+    <a href="#download"><img src="dlbutton.gif" width="128" height="28" alt="Download Now" /></a>
+</div>
+<p class="center">
+    <a href="#intro">Intro</a> | <a href="#req">Requirements</a> | <a href="#install">Installation</a> | <a href="#faq">FAQ</a> | <a href="#download">Download</a> | <a href="#license">License</a> | <a href="#notes"> Release Notes</a> | <a href="#contact">Contact</a>
+</p>
+
+<h3><a name="intro">Introduction</a></h3>
+<p>
+    This is a Universal (Intel and PPC) kernel extension for Mac OS X for those old (but still great) Thrustmaster ADB sticks. To use this driver you will need an <a href="http://www.griffintechnology.com/products/imate/">Griffin iMate USB -> ADB adapter</a>. It works by tricking Mac OS X into thinking the TM equipment is a USB HID device.
+</p>
+
+<h3><a name="req">Requirements</a></h3>
+<ol>
+    <li><b>Mac OS X 10.2 or latter</b></li>
+    <li><b>An iMate <a href="http://www.griffintechnology.com/products/imate/">iMate</a> from <a href="http://www.griffintechnology.com">Griffin Technology</a></b>
+    <li><b>An old ADB Thrustmaster stick</b></li>
+</ol>
+
+<h3><a name="install">Installation</a></h3>
+<ol>
+    <li><a href="#download">Download</a> the Thrustmaster package.</li>
+    <li>Double click the package to start the installation.</li>
+    <li><b>If the iMate drivers are installed, deinstall them!</b></li>
+        <ul>
+            <li>Delete /System/Library/Extensions/GriffiniMateADB.kext and /System/Library/Extensions/GriffiniMateMouse.kext</li>
+        </ul>
+    <li>Reboot (or if you are tricky, use kextload to load the extension and then plug in the iMate).</li>
+    <li>Plugin the iMate making sure the Thrustmaster joystick is connected to the iMate before plugin in the iMate.</li>
+    <li>Configure the driver using the Thrustmaster Preference Panel.</li>
+    <ul>
+        <li>Enable the throttle and rudder components, if you have them.</li>
+        <li>WCS Rocker acts as a Modifier will toggle the rocker between acting as a hat switch, and acting as a modifier for the buttons and FCS hat switch.</li>
+        <li>Select the buttons that you want the rocker to modify.</li>
+        <li>Make sure to Restart the Driver after any changes you make.</li> 
+    </ul>
+</ol>
+
+<h3><a name="faq">FAQ</a></h3>
+
+<p><b>Q: Dose the Thrustmaster Mac OS X Driver (Beta) work with Intel Macs?</b></p>
+<p>A: YES! Beta v4 works with Intel Macs (Requires an iMate USB -> ADB adapter).</p>
+
+<p><b>Q: Why do I have to remove the Griffin Drivers?</b></p>
+<p>A: The new Intel Macs do not support ADB in anyway. To get around this the new driver needs to take over the iMate and talk directly to the iMate rather then using the ADB subsystem and the Griffin drivers interfere with this operation.</p>
+
+<p><b>Q: I have a PPC Mac, do I still have to remove the Griffin Drivers?</b></p>
+<p>A: YES! Unless you want to continue using the previous version.</p>
+
+<p><b>Q: Can I use a USB -> ADB adapter other then the iMate?</b></p>
+<p>A: The Beta v4 driver only works on the iMate. The previous versions may work with other adapters.</p>
+
+<p><b>Q: I am on a PPC Mac, is there any reason to update to the latest version?</b></p>
+<p>A: YES! The latest version no longer polls the Joystick. This should lead to an increase in performance and will probably reduce the latency that some people have been complaining about.</p>
+
+<h3><a name="download">Download</a></h3>
+<ul>
+    <li><a href="http://sourceforge.net/project/showfiles.php?group_id=83014">Thrustmaster Driver & Source</a></li>
+    <li><a href="http://tmmacosx.cvs.sourceforge.net/tmmacosx">Web CVS</a></li>
+</ul>
+
+<h3><a name="license">License</a></h3>
+<p>
+    This project is released under the BSD License. Click <a href="License.txt">here</a> to view the license.
+</p>
+
+<h3><a name="notes">Release Notes</a></h3>
+<p><b>September 26, 2006</b></p>
+<ul>
+    <li>Is now a Universal Driver</li>
+    <li>Implements a very basic ADB driver and talks directly to the iMate adapter.</li>
+    <li>Added options to enable/disable the throttle and rudders. With the new architecture it currently isn't possible to automatically figure this information out.</li>
+    <li>We don't poll anymore.</li>
+</ul>
+<p><b>January 22, 2005</b></p>
+<ul>
+    <li>Added an option to emulate a twisting rudder. Some games (GraphSim's Operation Iraq Freedom) are poorly implemented and only search for the Rz axis ignoring the Z axis that a real rudder system would use.</li>
+    <li>Modified the hat switch to report values like the Saitek. GraphSim's OIF again has a poor implementation and only seems to work with Saitek like Joysticks.</li>
+</ul>
+<p><b>September 28, 2003</b></p>
+<ul>
+    <li>You can now select what buttons the WCS rocker modifies.</li>
+</ul>
+<p><b>August 24, 2003</b></p>
+<ul>
+    <li>Fixed Rudders, was reporting their range as 0-84, rather then 0-255</li>
+    <li>Added a Preference Panel to configure the driver settings</li>
+    <li>Moved to sourceforge.net</li>
+</ul>
+
+<p><b>April 5, 2003</b></p>
+<ul>
+    <li>Added a switch to the info.plist file to allow the rocker to work as a modifier.</li>
+    <li>We now add 128 to the reported rudder value.</li>
+    <li>When the rocker is not in modifier mode, it should report 0, and 180 degrees, rather then 0 and 45 degrees.</li>
+</ul>
+
+<p><b>March 29, 2003</b></p>
+<ul>
+    <li>Fixed Hat Switches.... I Hope...</li>
+    <li>Fixed Installer</li>
+</ul>
+
+<p><b>November 23, 2002</b></p>
+<ul>
+    <li>Fixed Hat Switches (I think)</li>
+    <li>Inverted the Throttle</li>
+    <li>Changed my polling to use a thread an IOSleep(), rather then a timer with a funky delayed call</li>
+</ul>
+
+<h3><a name="contact">Contact</a></h3>
+<p>
+    Please email any suggestions, bug reports, complaints, etc... to <a href="mailto:michael@milvich.com">michael@milvich.com</a>.
+</p>
+
+<p><a href="http://sourceforge.net"> <image src="http://sourceforge.net/sflogo.php?group_id=83014&amp;type=2" width="210" height="62"alt="SourceForge.net Logo" /></a></p>
+
+</body>
+</html>
